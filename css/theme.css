@@ -4,13 +4,14 @@ html {
 	overflow-x: hidden;
 	box-shadow: none !important;
 	-webkit-font-smoothing: antialiased;
+	scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
 	:root {
 		scroll-behavior: auto;
 	}
-}
+} */
 
 body {
 	background-color: var(--light);
