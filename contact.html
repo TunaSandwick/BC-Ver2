@@ -177,7 +177,7 @@
 					</div>
 					<div class="col-lg-6 col-xl-5 offset-lg-1 appear-animation" data-appear-animation="fadeInUpShorter"
 						data-appear-animation-delay="1250">
-						<form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
+						<form class="contact-form custom-form-style-1" method="POST" role="form">
 							<div class="contact-form-success alert alert-success d-none mt-4">
 								<strong>Thành Công!</strong> Tin nhắn của bạn đã được gửi.
 							</div>
@@ -211,6 +211,10 @@
 							<div class="row appear-animation" data-appear-animation="fadeInUpShorterPlus"
 								data-appear-animation-delay="1500">
 								<div class="form-group col mb-0">
+									<div class="recaptcha mb-2">
+										<div class="g-recaptcha"
+											data-sitekey="6Le1b1cqAAAAAH_sgrL-6UYeQOnpX8vx3WE-RhO3"></div>
+									</div>
 									<button type="submit"
 										class="btn btn-primary btn-modern font-weight-bold custom-btn-border-radius custom-btn-arrow-effect-1 text-3 px-5 py-3"
 										data-loading-text="Loading...">
@@ -353,6 +357,7 @@
 	<script src="vendor/bootstrap-star-rating/js/star-rating.min.js"></script>
 	<script src="vendor/bootstrap-star-rating/themes/krajee-fas/theme.min.js"></script>
 	<script src="vendor/jquery.validation/jquery.validate.min.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 	<!-- Theme Base, Components and Settings -->
 	<script src="js/theme.js"></script>
