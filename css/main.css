@@ -132,6 +132,17 @@ body {
 	}
 }
 
+.custom-background-style-2 {
+	background-size: cover;
+}
+
+@media (max-width: 575px) {
+	.custom-background-style-2 {
+		background-image: none !important;
+		background-color: var(--light);
+	}
+}
+
 .custom-svg-background-1 {
 	position: absolute;
 	width: 1000%;
