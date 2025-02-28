@@ -32,6 +32,8 @@
 	<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+	<link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css">
+	<link rel="stylesheet" href="vendor/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" href="css/theme.css">
@@ -205,8 +207,21 @@
 							</div>
 							<div class="row row-gutter-sm">
 								<div class="form-group col mb-3">
-									<input type="number" value="" data-msg-required="Hãy nhập số điện thoại của bạn." maxlength="100"
-										class="form-control" name="phone" id="phone" required placeholder="Số điện thoại">
+									<input type="number" value="" data-msg-required="Hãy nhập số điện thoại của bạn."
+										maxlength="100" class="form-control" name="phone" id="phone" required
+										placeholder="Số điện thoại">
+								</div>
+							</div>
+							<div class="row row-gutter-sm">
+								<div class="form-group col-6">
+									<input type="text" value="" data-msg-required="Hãy chọn ngày liên hệ."
+										maxlength="100" class="form-control custom-datepicker" name="date" id="date"
+										required placeholder="Ngày liên hệ">
+								</div>
+								<div class="form-group col-6">
+									<input type="text" value="" data-msg-required="Hãy chọn thời gian liên hệ."
+										maxlength="100" class="form-control custom-timepicker" name="time" id="time"
+										required placeholder="Thời gian liên hệ">
 								</div>
 							</div>
 							<div class="row">
@@ -384,6 +399,9 @@
 	<script src="vendor/plugins/js/plugins.min.js"></script>
 	<script src="vendor/bootstrap-star-rating/js/star-rating.min.js"></script>
 	<script src="vendor/bootstrap-star-rating/themes/krajee-fas/theme.min.js"></script>
+	<script src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+	<script src="vendor/bootstrap-datepicker/locales/bootstrap-datepicker.vi.min.js"></script>
+	<script src="vendor/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
 	<script src="vendor/jquery.validation/jquery.validate.min.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
