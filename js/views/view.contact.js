@@ -65,6 +65,11 @@
 					}
 				});
 
+				// add submitted date
+				const now = new Date();
+				const formattedDateTime = now.toLocaleString("vi");
+				data["date"] = formattedDateTime;
+
 				// Google Recaptcha v2
 				if (data["g-recaptcha-response"] != undefined) {
 					data["g-recaptcha-response"] = $form.find('#g-recaptcha-response').val();

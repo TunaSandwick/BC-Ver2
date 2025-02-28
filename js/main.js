@@ -9,7 +9,6 @@
 
 	// Fix datepicker issue when using body with margin (notice top bar)
 	var datepicker = $.fn.datepicker;
-	datepicker.defaults.format = "dd/mm/yyyy";
 	$.fn.datepicker = function () {
         var result = datepicker.apply(this, arguments);
 
@@ -32,9 +31,7 @@
 
     // Initialize Datepickers on the page
 	$('.custom-datepicker').each(function(){
-		$(this).datepicker({
-			language: 'vi'
-		});
+		$(this).datepicker();
 	});
 
 	/*
@@ -46,9 +43,7 @@
 			icons: {
 				up: 'fas fa-chevron-up',
 				down: 'fas fa-chevron-down'
-			},
-			showMeridian: false,
-			defaultTime: false
+			}
 		});
 	});
 
